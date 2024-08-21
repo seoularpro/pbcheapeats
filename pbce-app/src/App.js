@@ -35,9 +35,16 @@ export default function App() {
   const [phone, setPhone] = React.useState("");
   const [restaurant, setRestaurant] = React.useState("");
   const [tip, setTip] = React.useState(5);
-  const [orderId, setOrderId] = React.useState(120);
-
+  
   const [orderList, setOrderList] = React.useState([])
+  const [orderId, setOrderId] = React.useState(() => {
+    if(orderList.length > 0){
+      return orderList[orderList.length - 1].orderId + 1
+    }else{
+      return 120
+    }
+  });
+
 
   React.useEffect(() => {
 
@@ -129,8 +136,7 @@ export default function App() {
           }
         );
         console.log(response);
-        // setOrderList(moveDoneToEnd(sortByTip(response)));
-        setOrderList(response)
+        setOrderList(moveDoneToEnd(sortByTip(response)));
       } catch (error) {
         console.error(error)
       }
@@ -153,8 +159,7 @@ export default function App() {
           { orderId: orderId }
         );
         console.log(response);
-        // setOrderList(moveDoneToEnd(sortByTip(response)));
-        setOrderList(response)
+        setOrderList(moveDoneToEnd(sortByTip(response)));
       } catch (error) {
         console.error(error)
       }
@@ -181,8 +186,7 @@ export default function App() {
           { orderId: orderId }
         );
         console.log(response);
-        // setOrderList(moveDoneToEnd(sortByTip(response)));
-        setOrderList(response)
+        setOrderList(moveDoneToEnd(sortByTip(response)));
       } catch (error) {
         console.error(error)
       }
