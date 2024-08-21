@@ -125,6 +125,7 @@ export default function App() {
             restaurant: restaurant,
             tip: tip,
             status: Status[0],
+            time: new Date().toLocaleTimeString()
           }
         );
         console.log(response);
@@ -353,17 +354,20 @@ export default function App() {
       {getQueryStringValue("isPro") == "ogChristian" ? (
         <table style={{ marginTop: "10px" }}>
           <tr>
+            <th style={{ width: "75px" }}>Time</th>
             <th style={{ width: "75px" }}>Order ID</th>
             <th style={{ width: "75px" }}>Tip</th>
             <th style={{ width: "150px" }}>Name</th>
             <th style={{ width: "75px" }}>Phone</th>
             <th style={{ width: "125px" }}>Restaurant</th>
+            
 
             {/* {true ? <th> Delete </th> : <></>}
           {true ? <th> Update </th> : <></>} */}
           </tr>
           {orderList.map((order) => (
             <tr>
+              <td>{order.time}</td>
               <td>{order.orderId}</td>
 
               <td>{order.tip}</td>
