@@ -129,7 +129,8 @@ export default function App() {
           }
         );
         console.log(response);
-        setOrderList(moveDoneToEnd(sortByTip(response)));
+        // setOrderList(moveDoneToEnd(sortByTip(response)));
+        setOrderList(response)
       } catch (error) {
         console.error(error)
       }
@@ -152,7 +153,8 @@ export default function App() {
           { orderId: orderId }
         );
         console.log(response);
-        setOrderList(moveDoneToEnd(sortByTip(response)));
+        // setOrderList(moveDoneToEnd(sortByTip(response)));
+        setOrderList(response)
       } catch (error) {
         console.error(error)
       }
@@ -179,7 +181,8 @@ export default function App() {
           { orderId: orderId }
         );
         console.log(response);
-        setOrderList(moveDoneToEnd(sortByTip(response)));
+        // setOrderList(moveDoneToEnd(sortByTip(response)));
+        setOrderList(response)
       } catch (error) {
         console.error(error)
       }
