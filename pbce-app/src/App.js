@@ -47,7 +47,9 @@ export default function App() {
         const { data: response } = await axios.get('https://safe-chamber-28420-2e8556f993b6.herokuapp.com/orders');
         console.log(response);
         setOrderList(response);
-        setOrderId(response[response.length - 1].orderId + 1)
+        if(response.length > 0){
+          setOrderId(response[response.length - 1].orderId + 1)
+        }
       } catch (error) {
         console.error(error)
       }
