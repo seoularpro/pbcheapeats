@@ -37,13 +37,7 @@ export default function App() {
   const [tip, setTip] = React.useState(5);
   
   const [orderList, setOrderList] = React.useState([])
-  const [orderId, setOrderId] = React.useState(() => {
-    if(orderList.length > 0){
-      return orderList[orderList.length - 1].orderId + 1
-    }else{
-      return 120
-    }
-  });
+  const [orderId, setOrderId] = React.useState(120);
 
 
   React.useEffect(() => {
@@ -53,6 +47,7 @@ export default function App() {
         const { data: response } = await axios.get('https://safe-chamber-28420-2e8556f993b6.herokuapp.com/orders');
         console.log(response);
         setOrderList(response);
+        setOrderId(response[response.length - 1].orderId + 1)
       } catch (error) {
         console.error(error)
       }
