@@ -354,7 +354,7 @@ export default function App() {
       {getQueryStringValue("isPro") == "ogChristian" ? (
         <table style={{ marginTop: "10px" }}>
           <tr>
-            <th style={{ width: "75px" }}>Time</th>
+            <th style={{ width: "125px" }}>Time</th>
             <th style={{ width: "75px" }}>Order ID</th>
             <th style={{ width: "75px" }}>Tip</th>
             <th style={{ width: "150px" }}>Name</th>
