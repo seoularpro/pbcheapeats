@@ -43,7 +43,7 @@ export default function App() {
 
     const fetchData = async () => {
       try {
-        const { data: response } = await axios.get('https://floating-waters-19059-7de892580178.herokuapp.com/orders');
+        const { data: response } = await axios.get('https://safe-chamber-28420-2e8556f993b6.herokuapp.com/orders');
         console.log(response);
         setOrderList(response);
       } catch (error) {
@@ -117,7 +117,7 @@ export default function App() {
 
     const addOrder = async () => {
       try {
-        const { data: response } = await axios.post('https://floating-waters-19059-7de892580178.herokuapp.com/addOrder',
+        const { data: response } = await axios.post('https://safe-chamber-28420-2e8556f993b6.herokuapp.com/addOrder',
           {
             orderId: orderId,
             name: name,
@@ -147,7 +147,7 @@ export default function App() {
 
     const removeOrder = async () => {
       try {
-        const { data: response } = await axios.post('https://floating-waters-19059-7de892580178.herokuapp.com/removeOrder',
+        const { data: response } = await axios.post('https://safe-chamber-28420-2e8556f993b6.herokuapp.com/removeOrder',
           { orderId: orderId }
         );
         console.log(response);
@@ -174,7 +174,7 @@ export default function App() {
     // setOrderList(oldOrderList);
     const updateStatus = async () => {
       try {
-        const { data: response } = await axios.post('https://floating-waters-19059-7de892580178.herokuapp.com/updateOrder',
+        const { data: response } = await axios.post('https://safe-chamber-28420-2e8556f993b6.herokuapp.com/updateOrder',
           { orderId: orderId }
         );
         console.log(response);
