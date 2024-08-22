@@ -17,7 +17,7 @@ export function getQueryStringValue(key) {
 const Status = {
   0: "submitted",
   1: "delivering",
-  2: "done",
+  2: "delivered",
 };
 
 function sortByTip(arr) {
@@ -285,8 +285,11 @@ export default function App() {
       </form>
 
       <h5 style={{ textAlign: "left", marginTop: "20px" }}>
-        Orders are prioritized by tip amount.
+        We will call you to obtain your order details.
       </h5>
+      <h5 style={{ textAlign: "left", marginTop: "-15px" }}>
+        Orders are prioritized by tip amount.
+      </h5>    
       <h5 style={{ textAlign: "left", marginTop: "-15px" }}>
         Orders over $50 will require up-front payment.
       </h5>
