@@ -198,8 +198,11 @@ export default function App() {
       <h2 style={{ marginBottom: "20px", textAlign: "left", color: "#457EC0" }}>
         PB Cheap Eats
       </h2>
-      <h5 style={{ marginBottom: "20px", textAlign: "left" }}>
+      <h5 style={{ marginBottom: "10px", textAlign: "left" }}>
         No fees, no delivery charges, just pay a minimum $5 tip.
+      </h5>
+      <h5 style={{ marginBottom: "20px", textAlign: "left" }}>
+        Just fill out the details below, then we will call you to obtain your exact order.
       </h5>
       <form>
         <div style={{ textAlign: "left" }}>
@@ -285,11 +288,8 @@ export default function App() {
       </form>
 
       <h5 style={{ textAlign: "left", marginTop: "20px" }}>
-        We will call you to obtain your order details.
-      </h5>
-      <h5 style={{ textAlign: "left", marginTop: "-15px" }}>
         Orders are prioritized by tip amount.
-      </h5>    
+      </h5>   
       <h5 style={{ textAlign: "left", marginTop: "-15px" }}>
         Orders over $50 will require up-front payment.
       </h5>
