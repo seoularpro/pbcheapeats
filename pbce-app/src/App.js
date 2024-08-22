@@ -202,7 +202,7 @@ export default function App() {
         No fees, no delivery charges, just pay a minimum $5 tip.
       </h5>
       <h5 style={{ marginBottom: "20px", textAlign: "left" }}>
-        Just fill out the details below, then we will call you to obtain your exact order.
+        Just fill out the details below, then we will call you to get your order.
       </h5>
       <form>
         <div style={{ textAlign: "left" }}>
