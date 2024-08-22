@@ -198,7 +198,7 @@ export default function App() {
       <h2 style={{ marginBottom: "20px", textAlign: "left", color: "#457EC0" }}>
         PB Cheap Eats
       </h2>
-      <h5 style={{ marginBottom: "10px", textAlign: "left" }}>
+      <h5 style={{ textAlign: "left" }}>
         No fees, no delivery charges, just pay a minimum $5 tip.
       </h5>
       <h5 style={{ marginBottom: "20px", textAlign: "left" }}>
