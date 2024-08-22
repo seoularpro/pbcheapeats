@@ -10,7 +10,7 @@ const port = process.env.PORT || 3000;
 const Status = {
     0: "submitted",
     1: "delivering",
-    2: "done",
+    2: "delivered",
 };
 
 
