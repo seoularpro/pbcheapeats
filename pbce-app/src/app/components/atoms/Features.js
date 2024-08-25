@@ -27,7 +27,7 @@ const items = [
   {
     id: 1,
     icon: <EdgesensorHighRoundedIcon />,
-    title: 'I already ordered and paid',
+    title: 'Already ordered and paid',
     description:
       'Pick this option if you have already paid for and placed your order, and just need someone to pick it up.  We will text or call you to confirm your order.',
     imageLight: 'url("https://olo-images-live.imgix.net/dd/dd91fc53f7124f86ae7833eede4a802f.png?auto=format%2Ccompress&q=60&cs=tinysrgb&w=716&h=474&fit=crop&fm=png32&s=b08d9fd5cc269c84f2b223298752819d")',
@@ -36,7 +36,7 @@ const items = [
   {
     id: 2,
     icon: <DevicesRoundedIcon />,
-    title: 'I only ordered',
+    title: 'Already ordered not paid',
     description:
       'Pick this option if you have already placed your order, and need someone to pick it up and pay for it.  We will text or call you to confirm your order.',
     imageLight: 'url("https://fox5sandiego.com/wp-content/uploads/sites/15/2023/05/AdobeStock_248779461.jpeg?w=2560&h=1440&crop=1")',
