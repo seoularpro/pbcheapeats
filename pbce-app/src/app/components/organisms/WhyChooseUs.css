@@ -1,14 +1,14 @@
 /* LeaderBoard Left H1 Styles */
 .leaderBoard_left_h1 {
     line-height: 40px;
-    font-family: 'Roboto';
+    font-family: sans-serif;
     font-size: 1.8rem;
     font-weight: bold;
 }
 
 /* Icon Box H1 Styles */
 .icon_box_h1 {
-    font-family: 'Roboto';
+    font-family: sans-serif;
     font-size: 1rem;
     font-weight: bold;
 }
@@ -53,14 +53,14 @@
 
 /* Icon Box P Styles */
 .icon_box_p {
-    font-family: 'Roboto';
+    font-family: sans-serif;
     text-align: center;
     margin-top: 2px;
 }
 
 /* WCU Service Styles */
 .wcu_service {
-    font-family: 'Roboto';
+    font-family: sans-serif;
     padding: 0 20px;
     font-size: 0.9rem;
 }

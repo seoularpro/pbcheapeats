@@ -85,7 +85,7 @@ export default function LandingPage() {
             <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
 
 
-            <Box sx={{ bgcolor: 'background.default', marginTop: '100px' }}>
+            <Box sx={{ bgcolor: 'background.default', marginTop: '80px' }}>
                 <LeaderBoard />
                 <Highlights />
                 {/* <WhyChooseUs /> */}

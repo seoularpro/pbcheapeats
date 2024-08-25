@@ -45,7 +45,7 @@ const theme =  createTheme({
         green: '#4ca146',
     },
     typography: {
-        fontFamily: 'Roboto',
+        fontFamily: 'sans-serif',
         title3: {
             lineHeight: '40px',
             fontSize: '1.8rem',

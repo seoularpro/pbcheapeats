@@ -131,7 +131,7 @@ const getDesignTokens = (mode) => ({
         },
     },
     typography: {
-        fontFamily: "Roboto",
+        fontFamily: "sans-serif",
         h1: {
             fontSize: 60,
             fontWeight: 600,
