@@ -11,6 +11,8 @@
   "description": "",
   "dependencies": {
     "cors": "^2.8.5",
+    "emailjs": "^4.0.3",
     "express": "^4.19.2"
-  }
+  },
+  "type": "module"
 }
