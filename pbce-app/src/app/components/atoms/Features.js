@@ -138,8 +138,8 @@ export default function Features() {
                   '&:hover > svg': { transform: 'translateX(2px)' },
                 }}
                 onClick={function redirectToStripe(event) {
-                  if (selectedFeature.id == 0){
-                    window.location.href = 'https://buy.stripe.com/test_3cs5nY0mVdbA6Fa289';
+                  if (selectedFeature.id == 0) {
+                    window.location.href = 'https://buy.stripe.com/7sIbLj6yf2gM9gc288';
                   } else {
                     window.location.href = '/deliveryRequestForm';
                   }
@@ -147,7 +147,7 @@ export default function Features() {
                   event.preventDefault()
                   console.log('redirecting')
 
-                  
+
                 }}
               >
                 <span>Continue</span>
@@ -245,11 +245,20 @@ export default function Features() {
                         '& > svg': { transition: '0.2s' },
                         '&:hover > svg': { transform: 'translateX(2px)' },
                       }}
-                      onClick={(event) => {
-                        event.stopPropagation();
+                      onClick={function redirectToStripe(event) {
+                        if (selectedFeature.id == 0) {
+                          window.location.href = 'https://buy.stripe.com/7sIbLj6yf2gM9gc288';
+                        } else {
+                          window.location.href = '/deliveryRequestForm';
+                        }
+                        console.log(selectedFeature)
+                        event.preventDefault()
+                        console.log('redirecting')
+
+
                       }}
                     >
-                      <span>Learn more</span>
+                      <span>Continue</span>
                       <ChevronRightRoundedIcon
                         fontSize="small"
                         sx={{ mt: '1px', ml: '2px' }}
