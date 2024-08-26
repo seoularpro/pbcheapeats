@@ -63,7 +63,7 @@ export default function FAQ() {
                             gutterBottom
                             sx={{ maxWidth: { sm: '100%', md: '70%' } }}
                         >
-                            Just simply click the Order Now button, and fill out the form.  Please make sure you fill out the specific restaurant and order items you want, along with the custom amount you would like to pay.  We will call you if there are any issues.
+                            Just simply click the Order Now button, and select one of the three options based on your order process preference.  We will call you if there are any issues.
                         </Typography>
                     </AccordionDetails>
                 </Accordion>
