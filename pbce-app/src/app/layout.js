@@ -3,13 +3,14 @@ import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme';
 // import { GoogleAnalytics } from '@next/third-parties/google'
 // import { GoogleTagManager } from '@next/third-parties/google'
-
+import GoogleAnalytics from './GoogleAnalytics';
 
 
 export default function RootLayout(props) {
   const { children } = props;
   return (
     <html lang="en">
+      <GoogleAnalytics />
       <body>
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
