@@ -93,17 +93,17 @@ import Link from '@mui/material/Link';
 // }));
 
 export default function LeaderBoard() {
-//   const {
-//     leaderBoard,
-//     leaderBoard_left,
-//     leaderBoard_left_h1,
-//     leaderBoard_left_p,
-//     button,
-//     quicktip,
-//     quicktip_text,
-//     left,
-//     quickTip_container,
-//   } = useStyles();
+  //   const {
+  //     leaderBoard,
+  //     leaderBoard_left,
+  //     leaderBoard_left_h1,
+  //     leaderBoard_left_p,
+  //     button,
+  //     quicktip,
+  //     quicktip_text,
+  //     left,
+  //     quickTip_container,
+  //   } = useStyles();
   const QuickTip = ({ Icon, quicktip_details1, quicktip_details2 }) => (
     <div className='quicktip'>
       {Icon}
@@ -125,20 +125,39 @@ export default function LeaderBoard() {
           >
             Get all PB Food<br /> Delivered
           </Typography>
+         
           <Typography className='leaderBoard_left_p' component="p">
-            We deliver throughout PB for just  <br /> a $5 fee.
+            We deliver throughout PB for just  <br /> a $5 fee. 
+          </Typography>
+          <Typography sx={{ml: 2.5}} >
+            Call or text us at 
           </Typography>
           <Button
             disableElevation
             className='button'
             variant="contained"
             color="primary"
-            autoCapitalize="none"
+            // autoCapitalize="none"
+            // component={Link}
+            onClick={() => window.location.href = 'tel:+928-257-8808'}
+
+          >
+            928-257-8808
+          </Button>
+          <Typography  sx={{ml: 8}}>
+            or 
+          </Typography>
+          <Button
+            disableElevation
+            className='button'
+            variant="contained"
+            color="primary"
+            // autoCapitalize="none"
             // component={Link}
             onClick={() => window.location.href = '/paymentOptions'}
 
           >
-            Order Now
+            Order Online
           </Button>
           <div className='quickTip_container'>
             {/* <QuickTip
