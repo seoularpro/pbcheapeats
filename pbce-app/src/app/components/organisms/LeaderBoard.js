@@ -139,7 +139,7 @@ export default function LeaderBoard() {
             color="primary"
             // autoCapitalize="none"
             // component={Link}
-            onClick={() => window.location.href = 'tel:+928-257-8808'}
+            onClick={() => window.location.href = 'tel:928-257-8808'}
 
           >
             928-257-8808
